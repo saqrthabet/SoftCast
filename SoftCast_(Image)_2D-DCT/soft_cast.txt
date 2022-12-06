@@ -1,0 +1,20 @@
+softcast of 2D DCT implementation, the first image to grayscale, luminance signal obtained by DCT transformation matrix do
+-No OFDM , SNR 0:20 
+-input size 256x256 then after dividing both Height and Width by 8 we get 32x32 chunk 
+-2D DCT is 8x8 after deducting 128    
+-Chunk size 8x8
+
+Advantages/traits:
+1- perform 2D-DCT on blocks or chunks so there is no 2D-DCT- frame based. 
+
+
+Disadvantages:
+1-Total Number of Scales(g) in case of 8x8 chunk is just 64 for all 512x512 coefficients, which means the 1 coefficient in all chunks will have the same scale that is quite irrelavant.   It suppose to be at least 1 scale for each chunk, so then Total number of scale elements will equal Total number of chunks.
+
+
+
+
+
+
+https://stackoverflow.com/questions/9938008/variance-and-mean-of-image
+https://en.wikipedia.org/wiki/Variance 
